@@ -68,7 +68,7 @@ export async function POST(req: Request) {
         username!,
         image_url!
       );
-      if (user || eventType === "user.created") {
+      if (user && eventType === "user.created") {
         try {
           const client = await clerkClient();
           await client.users.updateUserMetadata(id, {
