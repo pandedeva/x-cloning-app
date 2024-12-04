@@ -8,6 +8,7 @@ import {
   SignedOut,
 } from "@clerk/nextjs";
 import { HiHome } from "react-icons/hi";
+import MiniProfile from "./MiniProfile";
 
 const LeftSidebar = () => {
   return (
@@ -33,6 +34,9 @@ const LeftSidebar = () => {
           </SignedOut>
         </div>
       </div>
+      <SignedIn>
+        <MiniProfile />
+      </SignedIn>
     </div>
   );
 };
