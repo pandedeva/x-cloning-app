@@ -54,11 +54,17 @@ const InputPost = () => {
       }),
     });
 
+    if (response.ok) {
+      console.log("Post created successfully");
+    } else {
+      console.error("Error creating post:", response.status);
+    }
+
     setPostLoading(false);
     setText("");
     setSelectedFile(null);
     setImageFileUrl(null);
-    // location.reload();
+    location.reload();
   };
 
   if (!isSignedIn || !isLoaded) return null;
