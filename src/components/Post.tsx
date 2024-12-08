@@ -54,7 +54,7 @@ const Post: React.FC<PostProps> = ({ post }) => {
           </Link>
         ) : null}
 
-        <Icons post={post} id={post?._id} />
+        <Icons post={post} />
       </div>
     </div>
   );
