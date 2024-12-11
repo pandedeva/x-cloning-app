@@ -1,7 +1,7 @@
 import Post from "@/libs/models/post.model";
 import { connect } from "@/libs/mongodb/mongoose";
 
-export const POST = async (req: any) => {
+export const POST = async () => {
   try {
     await connect();
     const feedPosts = await Post.find().sort({ createdAt: -1 });

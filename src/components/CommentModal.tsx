@@ -29,6 +29,7 @@ const CommentModal = () => {
       if (postId !== "") {
         setPostLoading(true);
         setInput("");
+        setPostId("");
         const response = await fetch(`/api/post/get`, {
           method: "POST",
           headers: {
