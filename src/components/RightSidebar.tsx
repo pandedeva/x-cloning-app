@@ -13,6 +13,10 @@ const RightSidebar = () => {
 
     router.push(`/search/${input}`);
     setInput("");
+
+    setTimeout(() => {
+      router.refresh();
+    }, 100);
   };
 
   return (
