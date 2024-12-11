@@ -6,7 +6,7 @@ import RightSidebar from "@/components/RightSidebar";
 import { ClerkProvider, ClerkLoaded, ClerkLoading } from "@clerk/nextjs";
 import Loader from "@/components/Loader";
 import SessionWrapper from "@/components/SessionWrapper";
-import CommentModal from "@/components/CommentModal";
+// import CommentModal from "@/components/CommentModal";
 
 const geistSans = localFont({
   src: ".././fonts/GeistVF.woff",
@@ -50,7 +50,7 @@ export default function RootLayout({
                   <RightSidebar />
                 </div>
               </div>
-              <CommentModal />
+              {/* <CommentModal /> */}
             </ClerkLoaded>
           </body>
         </html>
